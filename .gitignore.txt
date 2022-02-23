@@ -1,0 +1,12 @@
+## gitignore ##
+
+.idea/
+
+__pycache__/
+
+bootstrap-3.3.2-dist/
+
+startbootstrap-creative-gh-pages/
+
+venv/
+

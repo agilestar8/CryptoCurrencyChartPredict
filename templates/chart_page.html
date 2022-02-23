@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> {{coin_name}} chart </title>
+    {{ js_resources|indent(4)|safe }}
+    {{ css_resources|indent(4)|safe }}
+    {{ plot_script|indent(4)|safe }}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+</head>
+
+<body class = 'container'>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">ML Predict</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Chart</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Analysis</a>
+        </li>
+
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<h1> {{coin_name}} </h1>
+<br>
+<h6>거래량 : {{vol}} &nbsp&nbsp   </h6>
+
+<h6>현재가 : {{price}} &nbsp&nbsp (전일대비 {{dffper}}% )</h6>
+<h6 style="color:blue;"> 고가 : {{high}}  </h6>
+<h6 style="color:red;"> 저가 : {{low}} </h6>
+<form action="/analysis" method="post">
+                 <p>투자 추천도 확인 : <select name = "analysis">
+                    <option value = "KRW-BTC"> BTC </option>
+                    <option value = "KRW-ETH"> ETH </option>
+                    <option value = "KRW-XRP"> XRP </option>
+                    <option value = "KRW-LTC"> LTC </option>
+                    <option value = "KRW-ETC"> ETC </option>
+                    <option value = "KRW-QTUM"> QTUM </option>
+                    <option value = "KRW-BTG"> BTG </option>
+                    <option value = "KRW-EOS"> EOS </option>
+                    <option value = "KRW-ICX"> ICX </option>
+                    <option value = "KRW-TRX"> TRX </option>
+                    <option value = "KRW-OMG"> OMG </option>
+                    <option value = "KRW-KNC"> KNC </option>
+                    <option value = "KRW-GLM"> GLM </option>
+                    <option value = "KRW-ZIL"> ZIL </option>
+                    <option value = "KRW-WAXP"> WAXP </option>
+                    <option value = "KRW-POWER"> POWR </option>
+                    <option value = "KRW-LRC"> LRC </option>
+                    <option value = "KRW-STEEM"> STEEM </option>
+                    <option value = "KRW-STARX"> STRAX </option>
+                    <option value = "KRW-ZRX"> ZRX </option>
+                    <option value = "KRW-REP"> REP </option>
+                    <option value = "KRW-XEM"> XEM </option>
+                    <option value = "KRW-SNT"> SNT </option>
+                    <option value = "KRW-ADA"> ADA </option>
+                    <option value = "KRW-CTXC"> CTXC </option>
+                    <option value = "KRW-BAT"> BAT </option>
+                    <option value = "KRW-WTC"> WTC </option>
+                    <option value = "KRW-THETA"> THETA </option>
+                    <option value = "KRW-LOOM"> LOOM </option>
+                    <option value = "KRW-WAVES"> WAVES </option>
+
+                </select>  <input type="submit" class="btn btn-success" value="enter"></p>
+ </form>
+
+{{ plot_div|indent(4)|safe }}
+<br>
+
+</body>
+</html>

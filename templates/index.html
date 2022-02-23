@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> 차트 사이트 test </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body class="container">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">ML Predict</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Chart</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Analysis</a>
+        </li>
+
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<br>
+<div class = "row">
+    <div class="col-8">
+        <h3> 차트분석, 머신러닝 예측에 대한 의견 </h3>
+        과거 데이터나 경험을 가지고 패턴분석을 통해 돈을 번다는 것은, 사실 결과론적인 이야기일수 있다.
+        <br>
+        물론 모든사람이 시장에서 똑같이 생각하면 분석은 쉽다. 모든 사람들이 존버가 답이라고 생각하면 존버가 답일수도 있다.
+        <br>
+        다만 투자자들은 굉장히 다양한 상황에 다양한 생각을 가지고 투자를 하고 있다.
+        <br>
+        매도라고 생각할때 여자친구와 데이트를 하고있어 손절을 못해 속앓이를 하고있었는데 다음날 급상승한다거나,
+        <br>
+        혹은 주위사람들이 요행히 금융권에 돈에 관심이 많은 사람들이라 일찍 투자하게 되었든가,
+        <br>
+        너무나도 많은 정보와 너무나도 많은 '인간적인' 상황이 많다. 모델을 만들기 힘든 상황이라는 것이다.
+        <br>
+        물론 돈을 따면 내가 대단한 사람인가? 라고 생각할수도 있고 실제로 대단한 사람일수도 있다.
+        <br>
+        다만 주식시장에는 100명에게 랜덤으로 투자하라고 하면 대박을 계속치는 사람도 있고 쪽박만 치는 사람도 있다.
+        <br>
+        그리고 어느정도 자본이 쌓이면 '초기상황에 의해' 대박을 친 사람은 돈이 많아서 돈이 돈을 버는 상태에 이르고 그렇지 못한사람은 빈곤에 빠진다.
+        <br>
+        이 결과가 과연 실력이 대단해서 딴 것일까? 대부분의 기사는 자신이 기사중 평균이상의 운전실력을 가지고있다고 생각한다고 한다.
+        인간은 자신에 대해 관대하고 남에대해 엄격하기 마련이기 때문이다.
+        <br>
+        <br>
+        --> 과학적인 원인결과가 아닌 사회학적 이상 현상에 가까운 곳에 대해서는 심리학적으로 접근하거나,
+        <br>
+        패턴분석만을 신뢰하기보다는 차라리 자신이 감당할수 있을정도로 투자하는것도 방법이다.
+        <br>
+    <br>
+        </div>
+
+    <div class = "col-3">
+        <br>
+
+    <h3> 차트분석 </h3>
+     <form action="/post" method="post">
+        <p>분석할 암호화폐 : <select name = "chart" class="btn">
+                        <option value = "BTC"> BTC </option>
+                        <option value = "XRP"> XRP </option>
+                        <option value = "ETH"> ETH </option>
+                        <option value = "LTC"> LTC </option>
+                        <option value = "ETC"> ETC </option>
+                        <option value = "QTUM"> QTUM </option>
+                        <option value = "BTG"> BTG </option>
+                        <option value = "EOS"> EOS </option>
+                        <option value = "ICX"> ICX </option>
+                        <option value = "TRX"> TRX </option>
+                        <option value = "ETH"> OMG </option>
+                        <option value = "KNC"> KNC </option>
+                        <option value = "GLM"> GLM </option>
+                        <option value = "ZIL"> ZIL </option>
+                        <option value = "WAXP"> WAXP </option>
+                        <option value = "POWER"> POWR </option>
+                        <option value = "LRC"> LRC </option>
+                        <option value = "STEEM"> STEEM </option>
+                        <option value = "STARX"> STRAX </option>
+                        <option value = "ZRX"> ZRX </option>
+                        <option value = "REP"> REP </option>
+                        <option value = "XEM"> XEM </option>
+                        <option value = "SNT"> SNT </option>
+                        <option value = "ADA"> ADA </option>
+                        <option value = "CTXC"> CTXC </option>
+                        <option value = "BAT"> BAT </option>
+                        <option value = "WTC"> WTC </option>
+                        <option value = "THETA"> THETA </option>
+                        <option value = "LOOM"> LOOM </option>
+                        <option value = "WAVES"> WAVES </option>
+
+                    </select>  <input type="submit" class="btn btn-success" value="enter"></p>
+     </form>
+
+     <form action="/post" method="post">
+         <p>암호화폐 입력 : <input type="text" placeholder="Crypto Coin" class="btn" name="chart"> <input type="submit" class="btn btn-success" value="enter"></p>
+
+     </form>
+    </div>
+</div>
+<br><br>
+
+    < 바로가기 >
+<br>
+<a href="/BTC">BTC </a><br>
+<a href="/ETH">ETH </a><br>
+<a href="/LTC">LTC </a>
+
+</body>
+</html>
